@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+body {
+  @apply bg-gray-50 font-sans w-full;
+}
+
+.container {
+  @apply h-screen w-full flex flex-row md:flex-row items-start justify-center gap-6 p-10;
+}
+
+.form-section {
+  @apply flex flex-col w-1/2 md:w-[35%] bg-white p-8 rounded-2xl shadow-lg;
+}
+
+.data-section {
+  @apply flex flex-col w-auto md:flex-1 p-8 rounded-2xl shadow-lg 
+         overflow-auto md:overflow-visible 
+         bg-purple-100 md:bg-teal-100 lg:bg-pink-100;
+}
+
+h1 {
+  @apply font-bold text-3xl text-center mb-8 text-gray-900 tracking-wide;
+}
+
+label {
+  @apply text-base font-medium text-gray-800 mb-1;
+}
+
+input,
+textarea {
+  @apply w-full border border-gray-300 rounded-lg p-3 text-gray-800 shadow-sm 
+         focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition;
+}
+
+textarea {
+  @apply h-28 resize-none;
+}
+
+.submit-btn {
+  @apply mt-6 w-full rounded-lg bg-purple-600 text-white py-2.5 font-semibold shadow-md 
+         hover:bg-purple-700 hover:shadow-lg transition-all;
+}
+
+.update-btn {
+  @apply px-4 py-1 rounded-md bg-teal-500 text-white font-medium shadow-sm 
+         hover:bg-teal-600 hover:shadow-md transition m-1;
+}
+
+.delete-btn {
+  @apply px-4 py-1 rounded-md bg-pink-500 text-white font-medium shadow-sm 
+         hover:bg-pink-600 hover:shadow-md transition m-1;
+}
+
+/* Data Section */
+
+.table {
+  @apply w-full text-sm text-left text-gray-700 border-collapse rounded-lg shadow-md;
+}
+
+.table-head {
+  @apply bg-gradient-to-r from-purple-600 to-pink-500 text-white text-xs uppercase;
+}
+
+.table-row {
+  @apply bg-white border-b border-gray-200 hover:bg-purple-50 transition;
+}
+
+.table-header-cell {
+  @apply px-6 py-3 font-semibold;
+}
+
+.table-cell {
+  @apply px-6 py-4;
+}
